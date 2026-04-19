@@ -1,8 +1,19 @@
-import React from 'react'
+import Hero from "components/Hero";
+import StatsSection from "components/StatsSection";
+import ServicesSection from "components/ServicesSection";
+import WorkGrid from "components/WorkGrid";
+import BrandsSection from "components/BrandsSection";
+import Footer from "components/Footer";
 
-const Home = () => {
+export default function Home() {
   return (
-    <div> Learn Next js</div>
-  )
+    <main className="flex min-h-screen flex-col">
+      <Hero />
+      <StatsSection />
+      <ServicesSection />
+      <WorkGrid />
+      <BrandsSection />
+      <Footer />
+    </main>
+  );
 }
-export default Home;
